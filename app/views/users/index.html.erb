@@ -1,0 +1,26 @@
+
+<div class="wrapper">
+  <form class="survey" action="/users/create" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    Name:
+    <input type="text" name="user[name]">
+    Dojo Location:
+    <select class="location" name="user[location]">
+      <option value="mountain view">Mountain View</option>
+      <option value="san jose">San Jose</option>
+      <option value="burbank">Burbank </option>
+    </select>
+    Favorite Language:
+    <select class="language" name="user[language]">
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+      <option value="c++"> C++ </option>
+    </select>
+    <br>
+    Comment:
+    <textarea name="user[comment]" rows="4" cols="40"></textarea>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+</div>
